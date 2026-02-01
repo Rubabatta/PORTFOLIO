@@ -353,6 +353,23 @@ header {
     color: #7B4BFF;
     transform: translateY(-4px);
 }
+/* ABOUT ANIMATION */
+.about-img,
+.about-text h2,
+.about-text p,
+.about-text ul,
+.about-icons {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 0.8s ease forwards;
+}
+
+.about-img { animation-delay: 0.3s; }
+.about-text h2 { animation-delay: 0.5s; }
+.about-text p { animation-delay: 0.7s; }
+.about-text ul { animation-delay: 0.9s; }
+.about-icons { animation-delay: 1.1s; }
+
 /*==============SKILLS SECTON=============*/
 /* ================= SKILLS SECTION ================= */
 
@@ -486,6 +503,25 @@ header {
   font-weight: 600;
   color: #DEACF5;
 }
+/* SKILLS ANIMATION */
+.skill-content .title,
+.skill-content p,
+.skill-item {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 0.8s ease forwards;
+}
+
+/* delays */
+.skill-content .title { animation-delay: 0.3s; }
+.skill-content p { animation-delay: 0.5s; }
+
+.skill-item:nth-child(1){ animation-delay: 0.7s; }
+.skill-item:nth-child(2){ animation-delay: 0.8s; }
+.skill-item:nth-child(3){ animation-delay: 0.9s; }
+.skill-item:nth-child(4){ animation-delay: 1.0s; }
+.skill-item:nth-child(5){ animation-delay: 1.1s; }
+.skill-item:nth-child(6){ animation-delay: 1.2s; }
 
 /* ================= RESPONSIVE ================= */
 
