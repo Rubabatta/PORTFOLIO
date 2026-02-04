@@ -339,7 +339,7 @@ header {
 /* ===== SCROLL ANIMATION ===== */
 /*==============SKILLS SECTON=============*/
 .skill-section {
-  background: #DEACF5; /* Light section background */
+  background: #DEACF5;
   padding: 100px 6%;
 }
 
@@ -351,7 +351,7 @@ header {
 
 .skill-content .title {
   font-size: 36px;
-  color: #28104e; /* Dark title text */
+  color: #28104e;
   position: relative;
   display: inline-block;
 }
@@ -368,59 +368,49 @@ header {
 .skill-content p {
   margin: 20px auto 60px;
   max-width: 700px;
-  color: #28104e; /* Dark paragraph text */
+  color: #28104e;
   font-size: 16px;
 }
+
 .skill-container {
   display: grid;
   grid-template-columns: repeat(3, 180px);
   gap: 30px;
   justify-content: center;
-  overflow: visible; 
-  padding-bottom: 50px; 
 }
 
 .skill-item {
-  background: #28104e; 
-  border: 1.5px solid rgba(123, 75, 255, 0.6);
+  background: #28104e;
+  border: 1.5px solid rgba(72, 11, 240, 0.6);
   border-radius: 16px;
   height: 150px;
-  width: 180px;  
   padding: 16px 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #DEACF5;
-  box-shadow: 0 6px 15px rgba(123, 75, 255, 0.15);
-
-  
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
-  cursor: pointer;
-  position: relative; 
+  transition: all 0.3s ease;
 }
 
 .skill-item:hover {
-  transform: translateY(-20px); 
-  box-shadow: 0 25px 50px rgba(123, 75, 255, 0.5); 
-  border-color: #7B4BFF;
-  z-index: 10; 
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(123,75,255,0.25);
 }
 
 .skill-item i {
   font-size: 30px;
-  color: #DEACF5; 
+  color: #DEACF5;
 }
 
 .skill-name {
   font-size: 16px;
   font-weight: 600;
-  color: #DEACF5; /* skill name light */
+  color: #DEACF5;
 }
 
 .skill-bar {
   width: 100%;
   height: 13px;
-  background: rgba(222, 172, 245, 0.3);
+  background: rgba(154, 103, 236, 0.15);
   border-radius: 20px;
   overflow: hidden;
 }
