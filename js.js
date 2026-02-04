@@ -41,3 +41,33 @@ const handleScrollAnimation = () => {
 window.addEventListener('scroll', handleScrollAnimation);
 window.addEventListener('load', handleScrollAnimation);
 
+//============hire me ==============
+let hirebtn = document.querySelector("#hiremebtn");
+
+hirebtn.addEventListener("click", function () {
+  document.querySelector("#contact").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
+//==============Contact form submisson=============
+const form = document.querySelector('.contact-form');
+const successMsg = document.getElementById('success-message');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault(); // page reload roko
+
+  const formData = new FormData(form);
+  const response = await fetch(form.action, {
+    method: form.method,
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if(response.ok){
+    successMsg.style.display = 'block'; // show success
+    form.reset(); // clear form
+  } else {
+    alert('Oops! Something went wrong. Please try again.');
+  }
+});
