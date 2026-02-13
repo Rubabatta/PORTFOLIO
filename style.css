@@ -1339,4 +1339,48 @@ projects-grid{
     height: 36px;
     font-size: 16px;
   }
+
+  #footer{
+    padding: 30px 6% 20px;
+}
+
+.footer-container{
+    gap: 5px;
+}
+
+/* Logo */
+.footer-logo h2{
+    font-size: 20px;
+  
+}
+
+
+/* Quick Links */
+.footer-links{
+    gap: 20px;
+    font-size: 12px;
+}
+
+
+
+/* Social Icons */
+.footer-social{
+    
+    gap: 13px;
+}
+
+.footer-social a{
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    
+}
+
+/* Footer Bottom */
+.footer-bottom{
+    margin-top: 15px;
+    font-size: 10px;
+    padding-top: 10px;
+}
+
 }
