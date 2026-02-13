@@ -1229,29 +1229,24 @@ font-size: 9px;}
 .skill-fill{
 font-size: 7px;}
 
-projects-grid{
-    grid-template-columns: 1fr; /* single column */
+.projects-grid{
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 0 10px;
   }
 
   .project-card{
-    width: 100%;       /* full width for small screens */
-    max-width: 300px;  /* card max width */
-    margin: auto;      /* center align */
-    height: auto;      /* auto height for content */
-    display: flex;
-    flex-direction: column;
+     min-height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   }
 
-  .project-img{
-    height: 150px;    /* slightly smaller */
-    width: 100%;
-  }
+  
 
   .project-img img{
     height: 100%;
-    width: 100%;
+    width: 80%;
     object-fit: contain; /* image fully visible */
     padding: 10px;
   }
